@@ -26,3 +26,54 @@ for letter in message:
         print("A new string has been created:",new_message)
 
 print("Without vowels:",new_message)
+
+
+word = "pizza"
+
+print(word[0:5])
+print(word[1:3])
+print(word[-4:-2])
+print(word[-4:3])
+print(word[0:4])
+print(word[:4])
+print(word[2:5])
+print(word[2:])
+print(word[0:5])
+print(word[:])
+
+start = None
+if start != "":
+    start = int(input("\nStart: "))
+
+    if start:
+
+        finish = int(input("Finish: "))
+
+        print("word[", start, ":",finish, "] is", end=" ")
+        print(word[start:finish])
+
+
+# tuple
+inventory = ("sword", "armor", "shield", "healing potion")
+
+if not inventory:
+    print("You are empty handed")
+
+print("The tuple inventory is:\n", inventory)
+
+print("\nYour items:")
+for item in inventory:
+    print(item)
+
+print("You have", len(inventory), "items in your possession")    
+
+if "healing potion" in inventory:
+    print("You fight another day")
+
+index = int(input("Enter index of item: "))
+print(inventory[index])
+
+chest = ("gold", "gems")
+print("Chest contains:", chest)
+inventory += chest
+print(inventory)
